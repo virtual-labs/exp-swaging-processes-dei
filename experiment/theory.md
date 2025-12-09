@@ -1,4 +1,6 @@
 ### Link your theory in here
+Swaging
+
 Swaging is a process that is used to reduce or increase the diameter of tubes. A swagged piece created by placing the tube inside a die that applies compressive force by hammering radially.
 The term swage can apply to the process of swaging (verb), or to a die or tool used for swaging (noun).
 
