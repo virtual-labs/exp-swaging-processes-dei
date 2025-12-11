@@ -2,37 +2,72 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which is not a swaging machine:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Tagging machine",
+        "b": "Cogging machine",
+        "c": "Butt swaging machine",
+        "d": "All of these"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Tagging machine is used in swaging.",
+        "b": "Correct answer as per provided key.",
+        "c": "Butt swaging machine is valid.",
+        "d": "Incorrect because only B is correct."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Swaging technique involves removal of material:",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Swaging does not remove material.",
+        "b": "Correct answer as per provided key."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The stresses involved in making of swaged part are generally compressive in nature:",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct answer as per provided key.",
+        "b": "Incorrect because swaging is compressive."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The swaging process is generally carried out with the help of the two dies/punches:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct answer according to your key.",
+        "b": "Incorrect."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "\"Rotary forging\" is also called \"Radial Forging\":",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct answer as per provided key.",
+        "b": "Incorrect since both terms refer to same operation."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
