@@ -6,32 +6,11 @@ The term swage can apply to the process of swaging (verb), or to a die or tool u
 Manufacturing Processes: As a general manufacturing process swaging may be broken up into two categories. The first category of swaging involves the workpiece being forced through a confining die to reduce its diameter, similar to the process of drawing wire. This may also be referred to as "tube swaging." The second category involves two or more dies used to hammer a round workpiece into a smaller diameter. This process is usually called "rotary swaging" or "radial forging". Tubes may be tagged (reduced in diameter to enable the tube to be initially fed through the die to then be pulled from the other side) using a rotary swagger, which allows them to be drawn on a draw bench. Swaging is normally the method of choice for precious metals since there is no loss of material in the process.
 Swaging can be further expanded by placing a mandrel inside the tube and applying radial compressive forces on the outer diameter. Thus, through the swage process, the inner tube diameter can be a different shape, for example a hexagon, and the outer is still circular.
 
-<br>
-<div align="center">
-<table align="center">
-  <tr valign="top">
-    <td align="center" width="350">
-      <img src="images/TubeSwaging.png" width="400"  Height="400" style="margin-top:2px;"><br>
-      <b>Figure 1:</b> Tube Swaging
-    </td>
-  </tr>
-</table>
-</div>
-<br>
-
+<img src="images/TubeSwaging.png" alt="Scrap"><br>Figure 1: Tube Swaging<br><br></center>
 Rotary swaging: Rotary swaging process is usually a cold working process, used to reduce the diameter, produce a taper, or add point to a round workpiece. It can also impart internal shapes in hollow workpieces through the use of a mandrel (the shape must have a constant cross-section). Swaging a bearing into a housing means flaring its groove's lips onto the chamber of the housing. A swaging machine works by using two or four split dies which separate and close up to 2000 times a minute. This action is achieved by mounting the dies into the machine's spindle which is rotated by a motor. The spindle is mounted inside a cage containing rollers (looks like a roller bearing). The rollers are larger than the cage so as the spindle spins the dies are pushed out to ride on the cage by centrifugal force, as the dies cross over the rollers they push the dies together because of their larger size. On a four-die machine, the number of rollers cause all dies to close at a time; if the number of rollers do not cause all pairs of dies to close at the same time then the machine is called a rotary forging machine, even though it is still a swaging process.
-<br>
-<div align="center">
-<table align="center">
-  <tr valign="top">
-    <td align="center" width="350">
-      <img src="images/RotarySwaging.png" width="400"  Height="400" style="margin-top:2px;"><br>
-      <b>Figure 2:</b> Rotary Swaging
-    </td>
-  </tr>
-</table>
-</div>
-<br>
+
+<img src="images/RotarySwaging.png" alt="Scrap" width="400" height="300"><br>Figure 2: Rotary Swaging<br><br>
+
 A variation of the rotary swagger is the creeping spindle swaging machine where both the spindle and cage revolve in opposite directions, this prevents the production of fins between the dies where the material being swagged grows up the gap between the dies. There are two basic types of rotary swaging machine, the standard (also known as a tagging machine), and the butt swaging machine. A butt swaging machine works by having sets of wedges that close the dies onto the workpiece by inserting them between the annular rollers and the dies, normally by the use of a foot pedal. A butt swaging machine can allow a workpiece to be inserted without the dies closing on it, for example a three foot workpiece can be inserted 12 inches and then the dies closed, drawn through until 12 inches remain and the dies are then released, the finished workpiece would then, for example, be four feet long but still of its initial diameter for a foot at each end.
 
 Applications
