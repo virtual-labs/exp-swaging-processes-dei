@@ -7,6 +7,11 @@ Manufacturing Processes: As a general manufacturing process swaging may be broke
 Swaging can be further expanded by placing a mandrel inside the tube and applying radial compressive forces on the outer diameter. Thus, through the swage process, the inner tube diameter can be a different shape, for example a hexagon, and the outer is still circular.
 
 <img src="images/TubeSwaging.png" alt="Scrap"><br>Figure 1: Tube Swaging<br><br></center>
+
+<video width="600" height="400" controls autoplay loop muted>
+  <source src="images/SwagingGraph.mp4" type="video/mp4">
+</video>
+
 Rotary swaging: Rotary swaging process is usually a cold working process, used to reduce the diameter, produce a taper, or add point to a round workpiece. It can also impart internal shapes in hollow workpieces through the use of a mandrel (the shape must have a constant cross-section). Swaging a bearing into a housing means flaring its groove's lips onto the chamber of the housing. A swaging machine works by using two or four split dies which separate and close up to 2000 times a minute. This action is achieved by mounting the dies into the machine's spindle which is rotated by a motor. The spindle is mounted inside a cage containing rollers (looks like a roller bearing). The rollers are larger than the cage so as the spindle spins the dies are pushed out to ride on the cage by centrifugal force, as the dies cross over the rollers they push the dies together because of their larger size. On a four-die machine, the number of rollers cause all dies to close at a time; if the number of rollers do not cause all pairs of dies to close at the same time then the machine is called a rotary forging machine, even though it is still a swaging process.
 
 <img src="images/RotarySwaging.png" alt="Scrap" width="400" height="300"><br>Figure 2: Rotary Swaging<br><br>
