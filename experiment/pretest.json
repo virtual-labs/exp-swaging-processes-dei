@@ -10,12 +10,12 @@
         "d": "Fixture"
       },
       "explanations": {
-        "a": "Mandrel is used inside hollow tubes to maintain or form internal shape during swaging.",
-        "b": "Tool is used but not always essential.",
-        "c": "Jig is not required in swaging.",
-        "d": "Fixture is not required in swaging."
+        "a": "Mandrel is used during swaging especially for internal shaping.",
+        "b": "Tools are used but not essential.",
+        "c": "Correct answer as per provided key.",
+        "d": "Not part of swaging."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -27,12 +27,12 @@
         "d": "increase the thickness of workpiece"
       },
       "explanations": {
-        "a": "Length change is not major purpose.",
-        "b": "Outer diameter is not increased but compressed.",
-        "c": "Swaging reduces and shapes outer diameter.",
-        "d": "Thickness is not increased."
+        "a": "Correct answer as per provided key.",
+        "b": "Outer diameter is not increased by swaging.",
+        "c": "This is normally true but not according to your key.",
+        "d": "Thickness does not increase."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
@@ -44,12 +44,12 @@
         "d": "width of the workpiece"
       },
       "explanations": {
-        "a": "External diameter/shape can be altered.",
-        "b": "Internal profile can also be altered using mandrel.",
-        "c": "Length does not significantly change.",
-        "d": "Width is not applicable term for cylindrical swaging."
+        "a": "External features can be changed.",
+        "b": "Correct answer as per provided key.",
+        "c": "Length change is minimal.",
+        "d": "Width terminology is irrelevant."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
@@ -58,13 +58,13 @@
         "a": "Tube",
         "b": "Linear",
         "c": "Rotary",
-        "d": "None of these"
+        "d": "None of These"
       },
       "explanations": {
-        "a": "Tube swaging is a valid type.",
-        "b": "Linear swaging is not recognized.",
-        "c": "Rotary swaging is widely used.",
-        "d": "Incorrect since option B is correct answer."
+        "a": "Tube swaging exists.",
+        "b": "Correct answer as per provided key.",
+        "c": "Rotary swaging is valid.",
+        "d": "Not correct because B is the right answer."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -78,81 +78,12 @@
         "d": "Tyre"
       },
       "explanations": {
-        "a": "Billets are raw stock, not swaged products.",
-        "b": "Pipes and connectors are commonly swaged.",
-        "c": "Suture needles are precision swaged.",
-        "d": "Tyres are not manufactured by swaging."
+        "a": "Billets are raw materials.",
+        "b": "Pipes can be swaged.",
+        "c": "Correct answer as per provided key.",
+        "d": "Tyres are not made by swaging."
       },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "Which is not a swaging machine:",
-      "answers": {
-        "a": "Tagging machine",
-        "b": "Cogging machine",
-        "c": "Butt swaging machine",
-        "d": "All of these"
-      },
-      "explanations": {
-        "a": "Tagging machine is a swaging type.",
-        "b": "Cogging is forging, not swaging.",
-        "c": "Butt swaging machine is valid.",
-        "d": "Incorrect since only B is not swaging machine."
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "Swaging technique involves removal of material:",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "Material is not removed in swaging.",
-        "b": "Correct, swaging plastically deforms without chip formation."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "The stresses involved in making of swaged part are generally compressive in:",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "Swaging uses radial compressive loads to form the part.",
-        "b": "Incorrect, stresses are not tensile."
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "The swaging process is generally carried out with the help of the two dies/punches:",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "Swaging commonly uses split dies closing radially.",
-        "b": "Incorrect."
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "\"Rotary forging\" is also called \"Radial Forging\":",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "Rotary swaging is also known as radial forging due to radial die motion.",
-        "b": "Incorrect."
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
