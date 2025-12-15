@@ -1,75 +1,75 @@
-// Experiment data
-const experiments = {
-    kinematics: {
-        title: 'Swaging Kinematics',
+// Video mapping for Process and Result
+const videoData = {
+    process: {
+        title: 'Process - Swaging Kinematics',
         video: './images/Swaging_Kinematics.mp4'
     },
-    strain: {
-        title: 'Swaging Strain',
+    result: {
+        title: 'Result - Swaging Strain',
         video: './images/Swaging_Strain.mp4'
     }
 };
 
-// Function to show the selected experiment video
-function showExperiment(experimentType) {
-    const experiment = experiments[experimentType];
-    
-    if (!experiment) {
-        console.error('Invalid experiment type:', experimentType);
+// Function to show the selected video
+function showVideo(type) {
+    const data = videoData[type];
+
+    if (!data) {
+        console.error('Invalid video type:', type);
         return;
     }
-    
-    // Hide selection screen
-    const selectionContainer = document.getElementById('experimentSelection');
+
+    // Get elements
+    const simulationMain = document.getElementById('simulationMain');
     const videoPlayer = document.getElementById('videoPlayer');
     const videoTitle = document.getElementById('videoTitle');
     const videoSource = document.getElementById('videoSource');
-    const video = document.getElementById('experimentVideo');
-    
+    const video = document.getElementById('simulationVideo');
+
     // Update video content
-    videoTitle.textContent = experiment.title;
-    videoSource.src = experiment.video;
-    
+    videoTitle.textContent = data.title;
+    videoSource.src = data.video;
+
     // Reload video with new source
     video.load();
-    
+
     // Show video player with smooth transition
-    selectionContainer.classList.add('hidden');
+    simulationMain.classList.add('hidden');
     videoPlayer.classList.remove('hidden');
-    
+
     // Auto-play video
     video.play().catch(err => {
         console.log('Auto-play prevented:', err);
     });
 }
 
-// Function to go back to experiment selection
-function backToSelection() {
-    const selectionContainer = document.getElementById('experimentSelection');
+// Function to go back to main simulation screen
+function backToMain() {
+    const simulationMain = document.getElementById('simulationMain');
     const videoPlayer = document.getElementById('videoPlayer');
-    const video = document.getElementById('experimentVideo');
-    
+    const video = document.getElementById('simulationVideo');
+
     // Pause video
     video.pause();
-    
-    // Show selection screen
+
+    // Show main screen
     videoPlayer.classList.add('hidden');
-    selectionContainer.classList.remove('hidden');
+    simulationMain.classList.remove('hidden');
 }
 
 // Handle keyboard navigation
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     // Press Escape to go back
     if (event.key === 'Escape') {
         const videoPlayer = document.getElementById('videoPlayer');
         if (!videoPlayer.classList.contains('hidden')) {
-            backToSelection();
+            backToMain();
         }
     }
 });
 
 // Add smooth page load animation
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     document.body.style.opacity = '0';
     setTimeout(() => {
         document.body.style.transition = 'opacity 0.5s ease';
