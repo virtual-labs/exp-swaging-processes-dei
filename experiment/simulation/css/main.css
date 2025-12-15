@@ -13,16 +13,17 @@ body {
     line-height: 1.6;
 }
 
-/* Selection Container */
-.selection-container {
+/* Simulation Container */
+.simulation-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
 }
 
-.selection-content {
+.simulation-content {
     background: #ffffff;
-    padding: 30px;
+    padding: 40px;
+    text-align: center;
 }
 
 .main-title {
@@ -30,45 +31,52 @@ body {
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 0.5rem;
-    text-align: center;
 }
 
 .subtitle {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 2.5rem;
-    text-align: center;
+    margin-bottom: 3rem;
     font-weight: 400;
 }
 
-/* Experiment Cards */
-.experiment-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.experiment-card {
+.sim-button {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
     background: #ffffff;
-    border: 1px solid #dee2e6;
+    border: 2px solid #dee2e6;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.experiment-card:hover {
+.sim-button:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-color: #007bff;
+    background: #f8f9fa;
 }
 
-.card-icon {
+.button-icon {
     width: 64px;
     height: 64px;
-    margin: 0 auto 1.5rem;
     background: #e7f3ff;
     border-radius: 12px;
     display: flex;
@@ -77,49 +85,32 @@ body {
     transition: all 0.3s ease;
 }
 
-.experiment-card:hover .card-icon {
+.sim-button:hover .button-icon {
     background: #007bff;
 }
 
-.card-icon svg {
+.button-icon svg {
     width: 32px;
     height: 32px;
     color: #007bff;
     transition: all 0.3s ease;
 }
 
-.experiment-card:hover .card-icon svg {
+.sim-button:hover .button-icon svg {
     color: #ffffff;
 }
 
-.card-title {
+.button-text {
     font-size: 1.5rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 0.75rem;
-    text-align: center;
+    display: block;
 }
 
-.card-description {
-    font-size: 1rem;
+.button-description {
+    font-size: 0.95rem;
     color: #666;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.card-button {
-    display: inline-block;
-    color: #007bff;
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
-.experiment-card:hover .card-button {
-    color: #0056b3;
+    display: block;
 }
 
 /* Video Container */
@@ -183,7 +174,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-#experimentVideo {
+#simulationVideo {
     width: 100%;
     max-width: 900px;
     height: auto;
@@ -198,13 +189,13 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
 
-    .selection-container,
+    .simulation-container,
     .video-container {
         margin: 20px auto;
         padding: 15px;
     }
 
-    .selection-content,
+    .simulation-content,
     .video-content {
         padding: 20px;
     }
@@ -215,14 +206,15 @@ body {
 
     .subtitle {
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
-    .experiment-cards {
-        grid-template-columns: 1fr;
+    .button-container {
         gap: 1.5rem;
     }
 
-    .experiment-card {
+    .sim-button {
+        min-width: 100%;
         padding: 1.5rem;
     }
 
@@ -230,7 +222,7 @@ body {
         font-size: 1.5rem;
     }
 
-    #experimentVideo {
+    #simulationVideo {
         max-width: 100%;
     }
 }
@@ -240,11 +232,11 @@ body {
         font-size: 1.75rem;
     }
 
-    .card-title {
+    .button-text {
         font-size: 1.25rem;
     }
 
-    .selection-content,
+    .simulation-content,
     .video-content {
         padding: 15px;
     }
