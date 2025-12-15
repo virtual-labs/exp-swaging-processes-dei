@@ -1,76 +1,70 @@
-
-		<!-- <video width="600" height="400" controls autoplay loop muted>
-		<source src="images\Swaging_Kinematics.mp4" type="video/mp4">
-		</video> -->
-
-		<!-- <video width="600" height="400" controls autoplay loop muted>
-		<source src="images\Swaging_Strain.mp4" type="video/mp4">
-		</video> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulation - Metal Forming Processes</title>
+    <title>Swaging Process Simulation</title>
+    <!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- Modal Overlay -->
-    <div id="modal-overlay" class="modal-overlay">
-        <div class="modal-content">
-            <h2 class="modal-title">Select Simulation Process</h2>
-            <p class="modal-description">Choose a metal forming process</p>
-            <div class="modal-options">
-                <button class="modal-button" onclick="selectSimulation('cogging')">
-                    <h3>Cogging Process</h3>
-                    <p>Metal grain improvement and billet deformation technique</p>
-                </button>
-                <button class="modal-button" onclick="selectSimulation('becking')">
-                    <h3>Becking Process</h3>
-                    <p>Ring surface hardening through rotational forging</p>
-                </button>
-                <button class="modal-button" onclick="selectSimulation('mds')">
-                    <h3>Multi Diameter Shaft</h3>
-                    <p>Complex shaft forging with variable diameter sections</p>
-                </button>
+    <!-- Experiment Selection Screen -->
+    <div id="experimentSelection" class="selection-container">
+        <div class="selection-content">
+            <h1 class="main-title">Select Experiment</h1>
+            <p class="subtitle">Choose an experiment to begin the simulation</p>
+            
+            <div class="experiment-cards">
+                <div class="experiment-card" onclick="showExperiment('kinematics')">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Swaging Kinematics</h2>
+                    <p class="card-description">Explore the motion and dynamics of the swaging process</p>
+                    <div class="card-button">Start Experiment →</div>
+                </div>
+                
+                <div class="experiment-card" onclick="showExperiment('strain')">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Swaging Strain</h2>
+                    <p class="card-description">Analyze stress and strain distribution during swaging</p>
+                    <div class="card-button">Start Experiment →</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar" style="display: none;">
-        <nav class="nav-menu">
-            <button class="back-button" onclick="backToSelection()">← Back to Selection</button>
+    <!-- Video Player Screen -->
+    <div id="videoPlayer" class="video-container hidden">
+        <div class="video-content">
+            <button class="back-button" onclick="backToSelection()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Experiments
+            </button>
             
-            <div class="nav-section" id="cogging-nav" style="display: none;">
-                <h3 class="nav-title">Cogging</h3>
-                <ul class="nav-list">
-                    <li><a href="cogging-setup.html" class="nav-link">Cogging Setup</a></li>
-                    <li><a href="cogging-strain.html" class="nav-link">Cogging with Strain</a></li>
-                </ul>
-            </div>
+            <h2 id="videoTitle" class="video-title"></h2>
             
-            <div class="nav-section" id="becking-nav" style="display: none;">
-                <h3 class="nav-title">Becking</h3>
-                <ul class="nav-list">
-                    <li><a href="becking-setup.html" class="nav-link">Becking Setup</a></li>
-                    <li><a href="becking-strain.html" class="nav-link">Becking with Strain</a></li>
-                </ul>
+            <div class="video-wrapper">
+                <video id="experimentVideo" controls autoplay loop>
+                    <source id="videoSource" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            
-            <div class="nav-section" id="mds-nav" style="display: none;">
-                <h3 class="nav-title">Multi Diameter Shaft</h3>
-                <ul class="nav-list">
-                    <li><a href="mds-setup.html" class="nav-link">Multi Diameter Shaft Setup</a></li>
-                    <li><a href="mds-strain.html" class="nav-link">With Strain</a></li>
-                    <li><a href="mds-curve.html" class="nav-link">With Curve</a></li>
-                </ul>
-            </div>
-        </nav>
-    </aside>
+        </div>
+    </div>
 
+    <!-- Add JS at the bottom of HTML file --> 
     <script src="./js/main.js"></script>
 </body>
 </html>
+
