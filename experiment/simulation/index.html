@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Swaging Process Simulation</title>
 	<!-- Add CSS at the head of HTML file -->
-	<link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
+
+	<!-- Your code goes here-->
+
 	<!-- Simulation Main Screen -->
 	<div id="simulationMain" class="simulation-container">
 		<div class="simulation-content">
@@ -19,24 +17,24 @@
 			<div class="button-container">
 				<button class="sim-button" onclick="showVideo('process')">
 					<div class="button-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
 							<polygon points="5 3 19 12 5 21 5 3"></polygon>
 						</svg>
 					</div>
 					<span class="button-text">Process</span>
-					<span class="button-description"></span>
 				</button>
 
 				<button class="sim-button" onclick="showVideo('result')">
 					<div class="button-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
 							<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
 						</svg>
 					</div>
 					<span class="button-text">Result</span>
-					<span class="button-description"></span>
 				</button>
 			</div>
 		</div>
@@ -46,8 +44,9 @@
 	<div id="videoPlayer" class="video-container hidden">
 		<div class="video-content">
 			<button class="back-button" onclick="backToMain()">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-					stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2"
+					stroke-linecap="round" stroke-linejoin="round">
 					<line x1="19" y1="12" x2="5" y2="12"></line>
 					<polyline points="12 19 5 12 12 5"></polyline>
 				</svg>
@@ -65,8 +64,8 @@
 		</div>
 	</div>
 
-	<!-- Add JS at the bottom of HTML file -->
-	<script src="./js/main.js"></script>
-</body>
+	<!-- Add JS at the bottom of HTML file --> 
+    <script src="./js/main.js"></script>
 
+</body>
 </html>
