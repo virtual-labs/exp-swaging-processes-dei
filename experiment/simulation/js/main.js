@@ -1,50 +1,78 @@
-//Your JavaScript goes in here
-// Modal selection functionality
-function selectSimulation(type) {
-    // Store the selected simulation type
-    localStorage.setItem('selectedSimulation', type);
-    
-    // Navigate to the first page of the selected simulation
-    switch(type) {
-        case 'cogging':
-            window.location.href = 'cogging-setup.html';
-            break;
-        case 'becking':
-            window.location.href = 'becking-setup.html';
-            break;
-        case 'mds':
-            window.location.href = 'mds-setup.html';
-            break;
+// Experiment data
+const experiments = {
+    kinematics: {
+        title: 'Swaging Kinematics',
+        video: './images/Swaging_Kinematics.mp4'
+    },
+    strain: {
+        title: 'Swaging Strain',
+        video: './images/Swaging_Strain.mp4'
     }
+};
+
+// Function to show the selected experiment video
+function showExperiment(experimentType) {
+    const experiment = experiments[experimentType];
+    
+    if (!experiment) {
+        console.error('Invalid experiment type:', experimentType);
+        return;
+    }
+    
+    // Hide selection screen
+    const selectionContainer = document.getElementById('experimentSelection');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoTitle = document.getElementById('videoTitle');
+    const videoSource = document.getElementById('videoSource');
+    const video = document.getElementById('experimentVideo');
+    
+    // Update video content
+    videoTitle.textContent = experiment.title;
+    videoSource.src = experiment.video;
+    
+    // Reload video with new source
+    video.load();
+    
+    // Show video player with smooth transition
+    selectionContainer.classList.add('hidden');
+    videoPlayer.classList.remove('hidden');
+    
+    // Auto-play video
+    video.play().catch(err => {
+        console.log('Auto-play prevented:', err);
+    });
 }
 
-// Back to selection functionality
+// Function to go back to experiment selection
 function backToSelection() {
-    localStorage.removeItem('selectedSimulation');
-    window.location.href = 'index.html';
+    const selectionContainer = document.getElementById('experimentSelection');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const video = document.getElementById('experimentVideo');
+    
+    // Pause video
+    video.pause();
+    
+    // Show selection screen
+    videoPlayer.classList.add('hidden');
+    selectionContainer.classList.remove('hidden');
 }
 
-// Check if on index page and handle modal display
-document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('modal-overlay');
-    
-    // If modal exists (on index page), show it
-    if (modal) {
-        modal.style.display = 'flex';
-    }
-    
-    // If on a subpage, show the sidebar
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) {
-        const selectedSimulation = localStorage.getItem('selectedSimulation');
-        if (selectedSimulation) {
-            sidebar.style.display = 'block';
-            
-            // Show the appropriate navigation section
-            const navSection = document.getElementById(selectedSimulation + '-nav');
-            if (navSection) {
-                navSection.style.display = 'block';
-            }
+// Handle keyboard navigation
+document.addEventListener('keydown', function(event) {
+    // Press Escape to go back
+    if (event.key === 'Escape') {
+        const videoPlayer = document.getElementById('videoPlayer');
+        if (!videoPlayer.classList.contains('hidden')) {
+            backToSelection();
         }
     }
-});//Your JavaScript goes in here
+});
+
+// Add smooth page load animation
+window.addEventListener('load', function() {
+    document.body.style.opacity = '0';
+    setTimeout(() => {
+        document.body.style.transition = 'opacity 0.5s ease';
+        document.body.style.opacity = '1';
+    }, 100);
+});
