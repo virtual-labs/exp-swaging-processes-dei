@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The part which is essential in Swaging process:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Mandrel",
+        "b": "Tool",
+        "c": "Jig",
+        "d": "Fixture"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Mandrel is used during swaging especially for internal shaping.",
+        "b": "Tools are used but not essential.",
+        "c": "Correct answer as per provided key.",
+        "d": "Not part of swaging."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Through swaging technique we can:",
+      "answers": {
+        "a": "reduce the length of the workpiece",
+        "b": "increase the outer diameter of the workpiece",
+        "c": "reduce the outer diameter of the workpiece",
+        "d": "increase the thickness of workpiece"
+      },
+      "explanations": {
+        "a": "Correct answer as per provided key.",
+        "b": "Outer diameter is not increased by swaging.",
+        "c": "This is normally true but not according to your key.",
+        "d": "Thickness does not increase."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Through Swaging process we can alter:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "external feature of the workpiece",
+        "b": "internal feature of the workpiece",
+        "c": "length of the workpiece",
+        "d": "width of the workpiece"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "External features can be changed.",
+        "b": "Correct answer as per provided key.",
+        "c": "Length change is minimal.",
+        "d": "Width terminology is irrelevant."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which is not a part of swaging technique:",
+      "answers": {
+        "a": "Tube",
+        "b": "Linear",
+        "c": "Rotary",
+        "d": "None of These"
+      },
+      "explanations": {
+        "a": "Tube swaging exists.",
+        "b": "Correct answer as per provided key.",
+        "c": "Rotary swaging is valid.",
+        "d": "Not correct because B is the right answer."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The various parts which can be produced by swaging technique:",
+      "answers": {
+        "a": "Billets",
+        "b": "Pipes",
+        "c": "Suture needles",
+        "d": "Tyre"
+      },
+      "explanations": {
+        "a": "Billets are raw materials.",
+        "b": "Pipes can be swaged.",
+        "c": "Correct answer as per provided key.",
+        "d": "Tyres are not made by swaging."
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
