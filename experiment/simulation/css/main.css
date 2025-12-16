@@ -1,1 +1,243 @@
-/* You CSS goes in here */
+/* Virtual Labs Theme - Simulation Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Simulation Container */
+.simulation-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.simulation-content {
+    background: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sim-button {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: #ffffff;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sim-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: #007bff;
+    background: #f8f9fa;
+}
+
+.button-icon {
+    width: 64px;
+    height: 64px;
+    background: #e7f3ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.sim-button:hover .button-icon {
+    background: #007bff;
+}
+
+.button-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.sim-button:hover .button-icon svg {
+    color: #ffffff;
+}
+
+.button-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+}
+
+.button-description {
+    font-size: 0.95rem;
+    color: #666;
+    display: block;
+}
+
+/* Video Container */
+.video-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.video-content {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ffffff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    font-family: inherit;
+}
+
+.back-button:hover {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.back-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.video-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#simulationVideo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .simulation-container,
+    .video-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .simulation-content,
+    .video-content {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .button-container {
+        gap: 1.5rem;
+    }
+
+    .sim-button {
+        min-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .video-title {
+        font-size: 1.5rem;
+    }
+
+    #simulationVideo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .button-text {
+        font-size: 1.25rem;
+    }
+
+    .simulation-content,
+    .video-content {
+        padding: 15px;
+    }
+}
