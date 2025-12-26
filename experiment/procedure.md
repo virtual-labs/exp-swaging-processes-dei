@@ -1,4 +1,4 @@
-<h2 style="color: rgb(237,229,225); font-family: Arial;">Procedure</h2>
+
 
 <ol style="font-size:17px; font-family:Arial; color:#000000; line-height:1.6;">
 
