@@ -1,4 +1,4 @@
-## Theory
+### Theory
 
 **Swaging** is a process that is used to **reduce or increase the diameter of tubes**. A swagged piece is created by placing the tube inside a **die** that applies **compressive force** by **hammering radially**. The term swage can apply to the process of swaging (verb), or to a die or tool used for swaging (noun).
 
@@ -53,7 +53,7 @@ There are **two basic types** of rotary swaging machine:
 
 A **butt swaging machine** works by having sets of **wedges** that close the dies onto the workpiece by inserting them between the annular rollers and the dies, normally by the use of a **foot pedal**. A butt swaging machine can allow a workpiece to be inserted without the dies closing on it. For example, a three foot workpiece can be inserted 12 inches and then the dies closed, drawn through until 12 inches remain and the dies are then released. The finished workpiece would then, for example, be four feet long but still of its initial diameter for a foot at each end.
 
-## Applications
+### Applications
 
 ### Electronics
 
