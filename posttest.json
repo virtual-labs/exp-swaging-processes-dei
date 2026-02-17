@@ -1,0 +1,74 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which is not a swaging machine:",
+      "answers": {
+        "a": "Tagging machine",
+        "b": "Cogging machine",
+        "c": "Butt swaging machine",
+        "d": "All of these"
+      },
+      "explanations": {
+        "a": "Tagging machines are a type of rotary swaging machine used for diameter reduction.",
+        "b": "Cogging machines are primarily used for pre-forging large ingots, not for swaging operations.",
+        "c": "Butt swaging machines are commonly used for forming tapered or reduced sections.",
+        "d": "Incorrect because cogging is a forging operation, not swaging."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Swaging technique involves removal of material:",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Swaging reshapes metal without cutting, so material is not removed.",
+        "b": "Swaging is a plastic deformation process where material flows without removal."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The stresses involved in making of swaged part are generally compressive in nature:",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Swaging applies radial compressive forces to plastically deform the workpiece.",
+        "b": "Incorrect because swaging does not involve tensile stresses."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The swaging process is generally carried out with the help of the two dies/punches:",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Incorrect because swaging machines often use more than two dies.",
+        "b": "Swaging is commonly performed using multiple dies acting radially."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "\"Rotary forging\" is also called \"Radial Forging\":",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Both terms describe forging processes where deformation occurs by radial die action.",
+        "b": "Incorrect because rotary forging and radial forging refer to the same process."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
